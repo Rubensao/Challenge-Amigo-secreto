@@ -1,0 +1,118 @@
+/* style.css */
+
+:root {
+    --color-principal: #3A86FF;
+    --color-fondo: #F1FAEE;
+    --color-boton: #FF006E;
+    --color-boton-hover: #FB5607;
+    --color-texto: #1D3557;
+    --color-ganador: #06D6A0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+.seccion-formulario {
+    margin-top: 20px;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    margin-bottom: 15px;
+}
+
+.formulario {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.campo-texto {
+    padding: 10px;
+    border: 2px solid var(--color-principal);
+    border-radius: 8px;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.boton-agregar, .boton-sorteo {
+    background-color: var(--color-boton);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-agregar:hover, .boton-sorteo:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.lista {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    color: var(--color-texto);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.lista li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+.ganador {
+    background-color: var(--color-ganador);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pie {
+    margin-top: 15px;
+}
+
+.mensaje-sistema {
+    color: var(--color-texto);
+    font-size: 0.9rem;
+    font-style: italic;
+}
